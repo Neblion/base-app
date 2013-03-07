@@ -14,6 +14,15 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        $user = $this->get('security.context')->getToken()->getUser();
+            
+        // Check if user has a profile
+        if (!$user->getProfile()) {
+            // Set flash message
+            $this->get('session')->setFlash('notice', 'You have not a profile, create it!');
+            return $this->redirect($this->generateUrl('profile_new'));
+        }
+        
         return array();
     }
 }

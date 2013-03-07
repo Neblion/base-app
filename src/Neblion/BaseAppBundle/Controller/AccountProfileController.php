@@ -16,20 +16,6 @@ use Neblion\BaseAppBundle\Form\ProfileType;
  */
 class AccountProfileController extends Controller
 {
-    /**
-     * Lists all Profile entities.
-     *
-     * @Route("/", name="profile")
-     * @Template()
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getEntityManager();
-
-        $entities = $em->getRepository('NeblionBaseBundle:Profile')->findAll();
-
-        return array('entities' => $entities);
-    }
 
     /**
      * Displays a form to create a new Profile entity.

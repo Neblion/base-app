@@ -1,0 +1,119 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* Taskboard */
+ul.story-box-actions.nav, ul.task-box-actions.nav {
+    margin-bottom: 0px;
+}
+ul.story-box-actions.nav-pills > li { float: right; }
+
+.story-box { 
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+    border-right:  1px solid #CACACA;
+    padding: 3px; margin: 3px; 
+}
+.story-box p {
+    margin-bottom: 2px;
+}
+
+.sprint-story-row .badge { margin-right: 2px; }
+
+.task-box { 
+    border: 1px solid #CACACA;
+    padding: 3px; margin: 3px;
+}
+.task-box p {
+    margin-bottom: 2px;
+}
+
+
+/* Widget styles */
+.widget-box {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #CDCDCD;
+    clear: both;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.widget-title {
+    background-color: #EFEFEF;
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#FDFDFD), to(#EAEAEA));
+    background-image: -webkit-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -moz-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -ms-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -o-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    border-bottom: 1px solid #CDCDCD;
+    height: 36px;
+}
+
+.widget-title span.icon {
+    border-right: 1px solid #CDCDCD;
+    padding: 9px 10px 7px 11px;
+    float: left;
+    opacity: .7;
+}
+
+.widget-title h5 {
+    color: #666;
+    text-shadow: 0 1px 0 white;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px;
+    line-height: 12px;
+    margin: 0;
+}
+
+.widget-content {
+    padding: 12px 15px;
+}
+
+ul.projects-list {
+}
+
+ul.projects-list h3 {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    height: 32px;
+    margin: 0 0 1px;
+    white-space: nowrap;
+}
+
+ul.projects-list > li {
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 20px 0;
+    position: relative;
+    min-height: 66px;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    list-style-type: none;
+}
+
+ul.projects-list ul.project-actions {
+    display: inline-block;
+    position: relative;
+    float: right;
+    border: none;
+    padding-left: 15px;
+}
+
+ul.projects-list ul.project-actions li {
+    border: none;
+    color: #666;
+    line-height: 21px;
+    list-style-type: none;
+    display: block;
+    margin: 0 !important;
+    float: left;
+}
+
+ul.project-actions li a {
+    margin-left: 10px !important;
+}

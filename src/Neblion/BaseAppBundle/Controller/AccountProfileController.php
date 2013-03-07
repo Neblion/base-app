@@ -32,36 +32,6 @@ class AccountProfileController extends Controller
     }
 
     /**
-     * Finds and displays a Profile entity.
-     *
-     * @Route("/{id}/show", name="profile_show")
-     * @Template()
-     */
-    public function showAction($id)
-    {
-        $em = $this->getDoctrine()->getEntityManager();
-
-        $entity = $em->getRepository('NeblionBaseBundle:Profile')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Profile entity.');
-        }
-        
-        /*
-        $userManager = $this->container->get('fos_user.user_manager');
-        $account = $userManager->findUserByUsernameOrEmail('thomas.bibard+4@neblion.net');
-        $account->setUsername('scrum');
-        $userManager->updateUser($account);
-        */
-
-        $deleteForm = $this->createDeleteForm($id);
-
-        return array(
-            'entity'      => $entity,
-            'delete_form' => $deleteForm->createView(),        );
-    }
-
-    /**
      * Displays a form to create a new Profile entity.
      *
      * @Route("/new", name="profile_new")

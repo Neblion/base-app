@@ -13,8 +13,6 @@ class ScriptHandler
         $options = self::getOptions($event);
         $appDir = $options['symfony-app-dir'];
         
-        print_r($options);
-
         if (!is_dir($appDir)) {
             echo 'The symfony-app-dir ('.$appDir.') specified in composer.json was not found in '.getcwd().', can not install the requirements file.'.PHP_EOL;
 

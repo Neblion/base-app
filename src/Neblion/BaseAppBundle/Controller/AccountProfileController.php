@@ -39,11 +39,6 @@ class AccountProfileController extends Controller
      */
     public function newAction()
     {
-        // Check if user is authorized
-        if (!$this->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-            throw new AccessDeniedException();
-        }
-        
         $account = $this->get('security.context')->getToken()->getUser();
         
         // Check if the user has already a profile
@@ -72,11 +67,6 @@ class AccountProfileController extends Controller
      */
     public function createAction()
     {
-        // Check if user is authorized
-        if (!$this->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-            throw new AccessDeniedException();
-        }
-        
         $em = $this->getDoctrine()->getEntityManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
@@ -117,11 +107,6 @@ class AccountProfileController extends Controller
      */
     public function editAction()
     {
-        // Check if user is authorized
-        if (!$this->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-            throw new AccessDeniedException();
-        }
-        
         $em = $this->getDoctrine()->getEntityManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
@@ -154,11 +139,6 @@ class AccountProfileController extends Controller
      */
     public function usernameEmailAction()
     {
-        // Check if user is authorized
-        if (!$this->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-            throw new AccessDeniedException();
-        }
-        
         $em = $this->getDoctrine()->getEntityManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
@@ -194,11 +174,6 @@ class AccountProfileController extends Controller
      */
     public function updateAction()
     {
-        // Check if user is authorized
-        if (!$this->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
-            throw new AccessDeniedException();
-        }
-        
         $em = $this->getDoctrine()->getEntityManager();
         
         $account = $this->get('security.context')->getToken()->getUser();

@@ -2,8 +2,7 @@
 
 namespace Neblion\AppBundle\Tests\Controller;
 
-//use Neblion\BaseAppBundle\Tests\WebTestCase;
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Neblion\BaseAppBundle\Tests\WebTestCase;
 
 class DefaultControllerTest extends WebTestCase
 {

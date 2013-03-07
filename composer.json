@@ -58,6 +58,8 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "Neblion\\BaseAppBundle\\Composer\\ScriptHandler::installParameters",
+            "Neblion\\BaseAppBundle\\Composer\\ScriptHandler::CopyImgTwitterBootstrapToWebImg",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",

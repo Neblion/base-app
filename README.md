@@ -4,6 +4,12 @@ Neblion/BaseApp Symfony2 app
 Neblion/BaseApp is a Symfony2 base application on top on symfony/framework-standard-edition.
 Working in progress, no stable release yet....
 
+Neblion/BaseApp contain:
+- stof/doctrine-extensions-bundle
+- doctrine/doctrine-fixtures-bundle
+- friendsofsymfony/user-bundle
+- JQuery 1.9.1
+- twitter/bootstrap
 
 Installation
 ------------

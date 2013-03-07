@@ -63,7 +63,7 @@ class AccountProfileController extends Controller
      *
      * @Route("/create", name="profile_create")
      * @Method("post")
-     * @Template("NeblionBaseAppBundle:Profile:new.html.twig")
+     * @Template("NeblionBaseAppBundle:AccountProfile:new.html.twig")
      */
     public function createAction()
     {
@@ -170,7 +170,7 @@ class AccountProfileController extends Controller
      *
      * @Route("/update", name="profile_update")
      * @Method("post")
-     * @Template("NeblionBaseAppBundle:Profile:edit.html.twig")
+     * @Template("NeblionBaseAppBundle:AccountProfile:edit.html.twig")
      */
     public function updateAction()
     {

@@ -19,7 +19,7 @@ class DefaultController extends Controller
         // Check if user has a profile
         if (!$user->getProfile()) {
             // Set flash message
-            $this->get('session')->setFlash('notice', 'You have not a profile, create it!');
+            $this->get('session')->getFlashBag()->add('notice', 'You have not a profile, create it!');
             return $this->redirect($this->generateUrl('profile_new'));
         }
         

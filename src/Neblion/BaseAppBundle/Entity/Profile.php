@@ -46,7 +46,7 @@ class Profile
      *
      * @ORM\Column(name="lastname", type="string", length=255)
      * @Assert\NotBlank()
-     * @Assert\MaxLength(
+     * @Assert\Length(
      *      min = "2",
      *      max = "255"
      * )

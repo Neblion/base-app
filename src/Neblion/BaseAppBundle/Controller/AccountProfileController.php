@@ -53,7 +53,7 @@ class AccountProfileController extends Controller
      */
     public function createAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
         
@@ -93,7 +93,7 @@ class AccountProfileController extends Controller
      */
     public function editAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
         $profile = $account->getProfile();
@@ -125,7 +125,7 @@ class AccountProfileController extends Controller
      */
     public function usernameEmailAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
         $profile = $account->getProfile();
@@ -160,7 +160,7 @@ class AccountProfileController extends Controller
      */
     public function updateAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         
         $account = $this->get('security.context')->getToken()->getUser();
         $profile = $account->getProfile();
@@ -205,7 +205,7 @@ class AccountProfileController extends Controller
         $form->bindRequest($request);
 
         if ($form->isValid()) {
-            $em = $this->getDoctrine()->getEntityManager();
+            $em = $this->getDoctrine()->getManager();
             $entity = $em->getRepository('NeblionBaseAppBundle:Profile')->find($id);
 
             if (!$entity) {
